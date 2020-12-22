@@ -1,0 +1,119 @@
+
+<body>
+<div id = "wrap">
+    <div id = "borderone">
+    <div id = "bordertwo">
+
+        <div id = "introtext">
+            <div id = toptext>
+            <div id = "year">2019 - 2020</div>
+            <div id = "name">이로운의</div>
+            </div>
+            <div id = "portfolio">PORTFOLIO</div>
+            <button id = "click">Click</button>
+        </div>
+
+    </div>
+    </div>
+
+
+</div>
+</body>
+
+<style>
+
+@font-face {
+    font-family: 'JSDongkang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+}
+
+body {
+    font-family: 'JSDongkang-Regular';
+}
+
+    #wrap {
+        background : #D8E8FB;
+        width : 100%;
+        height: 100%;
+    }
+
+    #borderone {
+        border : 2.5px solid #786F82;
+        border-radius: 1%;
+        width : 96%;
+        height: 92%;
+        margin-left : 30px;
+        top : 30px;
+        position : relative;
+    }
+
+    #bordertwo {
+        border : 2.5px solid #786F82;
+        border-radius: 1%;
+        width : 100%;
+        height: 100%;
+        margin-left : 6px;  
+        margin-top : 6px;
+        position: relative;
+    }
+
+    /* 텍스트 */
+
+    #introtext {
+        margin : 15% 40%;
+    }
+
+    #year {
+        margin-right : 195px;
+    }
+
+    #toptext {
+        display : flex;
+        font-size : 25px;
+        font-weight: bold;
+        color : #7C9181;
+        width : 500px;
+    }
+
+    #portfolio {
+        font-size : 75px;
+        font-weight: bold;
+        color : #786F82;
+        text-shadow: 3px 3px 3px #786F82;
+    }
+
+    #click {
+        border : none;
+        background: none;
+        font-size : 40px;
+        margin-left : 180px;
+        margin-top : 30%;
+        /* color : #D8E8FB; */
+        color : white;
+        text-shadow: 1px 0 #786F82, 0 1px #786F82, -1px 0 #786F82, 0 -1px #786F82;
+    }
+
+
+/* 텍스트 마우스 오버 */
+
+#toptext {
+    opacity: 0.5;
+}
+
+#portfolio {
+    opacity: 0.5;
+}
+
+#wrap:hover #toptext{
+    opacity: 1;
+    transition : 0.5s;
+}
+
+#wrap:hover #portfolio {
+    opacity: 1;
+    transition : 0.5s;
+}
+
+
+
+</style>

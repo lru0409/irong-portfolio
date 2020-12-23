@@ -1,119 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>이로운의 포트폴리오</title>
+    </head>
 
 <body>
-<div id = "wrap">
-    <div id = "borderone">
-    <div id = "bordertwo">
+      <div id = "borderone">
+      <div id = "bordertwo">
 
-        <div id = "introtext">
-            <div id = toptext>
-            <div id = "year">2019 - 2020</div>
-            <div id = "name">이로운의</div>
-            </div>
-            <div id = "portfolio">PORTFOLIO</div>
-            <button id = "click">Click</button>
+        <div class = "container">
+            <span class = "text1">Welcome In</span>
+            <span type="button" class = "text2" onClick="location.href='index.html'">로운's PORTFOLIO</span>
         </div>
 
-    </div>
-    </div>
-
-
-</div>
+      </div>
+      </div>
 </body>
 
 <style>
 
 @font-face {
-    font-family: 'JSDongkang-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-family: 'Jal_Onuel';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
 }
 
 body {
-    font-family: 'JSDongkang-Regular';
+    font-family: 'Jal_Onuel';
 }
 
-    #wrap {
-        background : #D8E8FB;
-        width : 100%;
-        height: 100%;
-    }
+/* css */
 
-    #borderone {
+#borderone {
         border : 2.5px solid #786F82;
         border-radius: 1%;
-        width : 96%;
-        height: 92%;
-        margin-left : 30px;
+        width : 1800px;
+        height: 840px;
+        margin : auto;
         top : 30px;
         position : relative;
+        animation-name: border;
+        animation-duration: 2s;
+        animation-iteration-count: 1; 
+        animation-fill-mode : forwards;
     }
 
-    #bordertwo {
-        border : 2.5px solid #786F82;
-        border-radius: 1%;
-        width : 100%;
-        height: 100%;
-        margin-left : 6px;  
-        margin-top : 6px;
-        position: relative;
-    }
-
-    /* 텍스트 */
-
-    #introtext {
-        margin : 15% 40%;
-    }
-
-    #year {
-        margin-right : 195px;
-    }
-
-    #toptext {
-        display : flex;
-        font-size : 25px;
-        font-weight: bold;
-        color : #7C9181;
-        width : 500px;
-    }
-
-    #portfolio {
-        font-size : 75px;
-        font-weight: bold;
-        color : #786F82;
-        text-shadow: 3px 3px 3px #786F82;
-    }
-
-    #click {
-        border : none;
-        background: none;
-        font-size : 40px;
-        margin-left : 180px;
-        margin-top : 30%;
-        /* color : #D8E8FB; */
-        color : white;
-        text-shadow: 1px 0 #786F82, 0 1px #786F82, -1px 0 #786F82, 0 -1px #786F82;
-    }
-
-
-/* 텍스트 마우스 오버 */
-
-#toptext {
-    opacity: 0.5;
+#bordertwo {
+    border : 2.5px solid #786F82;
+    border-radius: 1%;
+    width : 100%;
+    height: 100%;
+    margin-left : 6px;  
+    margin-top : 6px;
+    position: relative;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode : forwards;
 }
 
-#portfolio {
-    opacity: 0.5;
+body {
+    background : #D8E8FB;
 }
 
-#wrap:hover #toptext{
-    opacity: 1;
-    transition : 0.5s;
+.container {
+    text-align: center;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    width : 100%;
 }
 
-#wrap:hover #portfolio {
-    opacity: 1;
-    transition : 0.5s;
+.container span {
+    display : block;
 }
 
+.text1 {
+    font-size : 50px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    background: #D8E8FB;
+    position: relative;
+    text-align: right;
+    padding-right : 500px;
+    width : 1105px;
+    padding-top : 10px;
+    animation-name : text;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode : forwards;
+}
+
+.text2 {
+    font-size : 60px;
+    color : #786F82;
+    background :linear-gradient(to right, rgba(225, 225, 225, 0) 50%,#e3daf1 50%);
+    background-size : 200%;
+    transition : .35s; 
+    width : 600px;
+    margin-left : 34%;
+}
+
+.text2:hover {
+    background-position : -100% 0;
+}
+
+@keyframes text {
+    0% {
+        color :#D8E8FB;
+        margin-bottom : -61px; 
+    }
+    30% {
+        margin-bottom : -61px; 
+    }
+    50% {
+        color :#786F82;
+        margin-bottom : -61px; 
+    }
+    100%{
+        color :#7C9181;
+        margin-bottom : 40px;
+    }
+}
+
+@keyframes border {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 </style>

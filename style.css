@@ -1,0 +1,143 @@
+
+.inner-container {
+    width : 1250px;
+    margin : 0 auto;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'JSDongkang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+}
+
+body {
+    font-family: 'JSDongkang-Regular';
+}
+
+/* 헤더 */
+
+header {
+    background : #D8E8FB ;
+}
+
+header .inner-container {
+    display : flex;
+    padding-top : 30px;
+}
+
+.logo {
+    font-size : 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+    margin-right : 314px;
+}
+
+.header-btns a {
+  color: #786F82;
+  margin-left: 55px;
+  font-size : 20px;
+  position : relative;
+  z-index: 2;
+}
+
+.header-btn1back {
+    position : absolute;
+    top : 0px;
+    left : 640px;
+    width : 160px;
+    height : 80px;
+    background : #EDEDED;
+    z-index: 1;
+    opacity: 0;
+}
+
+.header-btn1back:hover {
+    opacity: 1;
+    position : absolute;
+}
+
+.header-btn2back {
+    position : absolute;
+    top : 0px;
+    left : 800px;
+    width : 160px;
+    height : 80px;
+    background : #EDEDED;
+    z-index: 1;
+    opacity: 0;
+    transition: background-color 1s;
+}
+
+.header-btn2back:hover {
+    opacity: 1;
+    position : absolute;
+}
+
+.header-btn3back {
+    position : absolute;
+    top : 0px;
+    left : 960px;
+    width : 160px;
+    height : 80px;
+    background : #EDEDED;
+    z-index: 1;
+    opacity: 0;
+}
+
+.header-btn3back:hover {
+    opacity: 1;
+    position : absolute;
+}
+
+.header-btn4back {
+    position : absolute;
+    top : 0px;
+    left : 1120px;
+    width : 160px;
+    height : 80px;
+    background : #EDEDED;
+    z-index: 1;
+    opacity: 0;
+}
+
+.header-btn4back:hover {
+    opacity: 1;
+    position : absolute;
+}
+
+
+
+/* section1 메인 */
+
+.sectionone {
+    background: #D8E8FB;
+    height : 860px;
+}
+
+/* section2 어바웃미*/
+
+.sectiontwo {
+    height : 930px;
+    background : white;
+}
+
+/* section3 타임라인*/
+
+.sectionthree {
+    height : 930px;
+    background : rgb(173, 40, 40);
+}
+
+/* section4 프로젝트 */
+
+.sectionfour {
+    height : 930px;
+    background : rgb(68, 61, 61);
+}
+
+/* section5 컨택트 */
+
+.sectionfive {
+    height : 930px;
+    background : rgb(112, 60, 233);
+}

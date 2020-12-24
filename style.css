@@ -18,7 +18,10 @@ body {
 
 header {
     background : #D8E8FB ;
-    /* position : fixed; */
+    position : fixed;
+    width : 100%;
+    margin-top : -8px;
+    z-index: 2;
 }
 
 header .inner-container {
@@ -29,8 +32,21 @@ header .inner-container {
 .logo {
     font-size : 30px;
     font-weight: bold;
+    color : rgb(83, 83, 83);
     text-shadow: 2px 2px 2px gray;
-    margin-right : 286px;
+    margin-right : 309px;
+    font-family: 'GmarketSansLight';
+    text-decoration : none;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.header-btn1, .header-btn2, .header-btn3, .header-btn4 {
+    display: inline-block;
+    width : 150px;
+    height : 30px;
 }
 
 .header-btns a {
@@ -38,34 +54,15 @@ header .inner-container {
   font-size : 20px;
   font-weight: bold;
   position : relative;
-  top : 11px;
   text-decoration: none;
-  overflow : hidden;
-  border : 2px solid #786F82;
-  margin : auto;
-  padding : 10px;
-  margin-left : 20px;
+  text-align: center;
+  padding-top : 11px;
 }
 
 .header-btns a:hover {
-    color : #7C9181;
     background : #DEDAE3 ;
     transition : 0.5s;
 }
-
-/* .header-btns a:before {
-    left:-100%; right:100%; bottom:0; top:0;
-    transition : 0.35s;
-    transform:scale(0);
-    transition : 0.35s;
-    background : #D8E8FB;
-}
-.header-btns a:hover:before {
-    transform: scale(1);
-    background : #DEDAE3;
-    left:0; right:0; top:0; bottom:0;
-} */
-
 
 /* .header-btn1back {
     position : absolute;
@@ -137,12 +134,13 @@ header .inner-container {
 
 .sectionone {
     background: #D8E8FB;
-    height : 860px;
+    height : 930px;
+    width : 100%;
 }
 
 .mainchracter {
     position: absolute;
-    margin-top : 112px;
+    margin-top : 183px;
     margin-left : 120px;
 }
 
@@ -151,7 +149,21 @@ header .inner-container {
     text-align: right;
     right : 120px;
     font-size : 50px;
-    margin-top : 250px;
+    margin-top : 400px;
+    display : none;
+}
+
+.typing {
+    display : inline-block;
+    animation-name : typing;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0%{border-right : 1px solid black;}
+    50%{border-right : 1px solid black;}
+    100%{border-right : 1px solid black;}
 }
 
 /* .maintext {
@@ -193,7 +205,7 @@ header .inner-container {
 }
 
 .innerinner {
-    background :;
+    background :red;
     /* position : relative; */
     margin : auto;
     width : 630px;

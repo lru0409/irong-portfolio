@@ -1,0 +1,77 @@
+/* section5 주제중심 프로젝트 */
+
+.sectionfive {
+    height : 700px;
+    background : #dae2dc;
+}
+
+.sectionfive .topicall {
+    display : flex;
+    padding-top : 17.5%;
+}
+
+.topic1 {
+    margin-left : 125px;
+    text-decoration : none;
+    color :rgb(83, 83, 83);
+}
+
+.topic2 {
+    margin-left : 50px;
+    margin-right : 50px;
+    text-decoration : none;
+    color :rgb(83, 83, 83);
+}
+
+.topic3 {
+    margin-right : 125px;
+    text-decoration : none;
+    color :rgb(83, 83, 83);
+}
+
+.sectionfive .box {
+    width : 300px;
+    height : 90px;
+    background : white;
+    margin-top : -22px;
+    text-align: center;
+    padding-top : 55px;
+    font-size : 18px;
+    line-height: 30px;
+}
+
+/* 주제중심 마우스 오버 */
+
+.topic1hover, .topic2hover, .topic3hover {
+    position : absolute;
+    font-size : 28px;
+    font-weight: bold;
+    color : white;
+    bottom : 100%;
+    text-align: center;
+    background : rgba(0, 0, 0, 0.644);
+    width : 100%;
+    height : 60%;
+    padding-top : 100px;
+}
+
+.topicall .photo {
+    position : relative;
+    overflow: hidden;
+}
+
+.topic1:hover .topic1hover, 
+.topic2:hover .topic2hover, 
+.topic3:hover .topic3hover {
+    bottom : 3%;
+    transition : all 0.35s;
+}
+
+
+/* 형광펜 효과 */
+
+.topic1:hover .highlight::before,
+.topic2:hover .highlight::before ,
+.topic3:hover .highlight::before  {
+    left:0;
+}

@@ -1,0 +1,65 @@
+/* 기본 세팅 */
+
+.inner-container {
+    width : 1250px;
+    margin : 0 auto;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+}
+
+body {
+    font-family: 'GmarketSansLight';
+}
+
+/* 헤더 */
+
+header {
+    background : #D8E8FB ;
+    position : fixed;
+    width : 1424px;
+    margin-top : -2px;
+    z-index: 4;
+}
+
+header .inner-container {
+    display : flex;
+    padding : 20px 0;
+}
+
+.logo {
+    font-size : 30px;
+    font-weight: bold;
+    color : rgb(83, 83, 83);
+    text-shadow: 2px 2px 2px gray;
+    margin-right : 309px;
+    font-family: 'GmarketSansLight';
+    text-decoration : none;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.header-btn1, .header-btn2, .header-btn3, .header-btn4 {
+    display: inline-block;
+    width : 150px;
+    height : 30px;
+}
+
+.header-btns a {
+  color: #786F82;
+  font-size : 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding-top : 11px;
+}
+
+.header-btns a:hover {
+    background : #DEDAE3 ;
+    transition : 0.5s;
+}

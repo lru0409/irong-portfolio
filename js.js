@@ -42,12 +42,12 @@ window.onload = function() {
 
     //버튼을 클릭하면 슬라이드 이동시키기 
 
-    leftbutton.addEventListener('click', function(e){
+    leftbutton[0].addEventListener('click', function(e){
         e.preventDefault();
         goToSlide(currentIndex - 1);
     });
 
-    rightbutton.addEventListener('click', function(e){
+    rightbutton[0].addEventListener('click', function(e){
         e.preventDefault();
         goToSlide(currentIndex + 1);
     });

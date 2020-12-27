@@ -1,0 +1,103 @@
+/* section2 어바웃미*/
+
+/* 프로필 */
+
+.sectiontwo {
+    height : 930px;
+    background : rgb(250, 249, 249);
+    position: relative;
+    margin-bottom : -16px;
+}
+
+.sectiontwo .profileinner{
+    display: flex;
+}
+
+.innerinner {
+    margin-left : 100px;
+    margin-right : 150px;
+}
+
+#myphoto {
+    width : 360px;
+    height : 360px;
+    border : 20px solid #A192B8;
+    margin-top : 155px;
+}
+
+.aboutmetext {
+    display: flex;
+    margin-left : 110px;
+    margin-top : 60px;
+    font-size : 25px;
+    line-height: 40px;
+}
+
+.aboutmemenu {
+    font-weight: bold;
+    margin-left : -110px;
+    margin-right : 50px;
+    width : 100px;
+    color : #A192B8;
+    text-shadow: 1px 1px 1px gray;
+}
+
+/* 자기소개 리플렛 */
+
+.introduce {
+    /* margin-top : 165px;
+    margin-right : 200px; */
+    display : flex;
+}
+
+.introducecontainer {
+    position : relative;
+    overflow: hidden;
+    width : 100%;
+    width : 419px;
+    height: 595px;
+    border : 1.5px solid #786F82;
+    display: flex;
+    margin-top : 165px;
+}
+
+.introduceimg {
+    position: absolute;
+    width : 100%;
+    width : 419px;
+    height: 595px;
+    display: flex;
+    margin-top : 0px;
+    padding-left : 0px;
+}
+
+.introduceimg.animated {
+    -webkoit-transition : left 0.3s ease-in;
+    transition : left 0.3s ease-in;
+}
+
+.right, .left {
+    font-size : 50px;
+    text-decoration : none;
+    color : #786F82;
+    position : absolute;
+    margin-top : 440px;
+}
+
+.left {
+    margin-left : -30px;
+}
+
+.right {
+    margin-left : 424px; 
+}
+
+.left:hover {
+    font-weight : bold;
+}
+
+.right:hover {
+    font-weight : bold;
+}
+
+.right.disabled .left.disabled {display: none;}

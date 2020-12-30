@@ -53,12 +53,17 @@
 .introducecontainer {
     position : relative;
     overflow: hidden;
-    width : 100%;
-    width : 419px;
+    /* width : 100%; */
+    width : 420px;
     height: 595px;
     border : 1.5px solid #786F82;
     display: flex;
     margin-top : 165px;
+}
+
+.introducecontainer ul {
+    list-style : none;
+
 }
 
 .introduceimg {
@@ -82,6 +87,7 @@
     color : #786F82;
     position : absolute;
     margin-top : 440px;
+    display : inline-block;
 }
 
 .left {

@@ -18,25 +18,6 @@ window.onload = function() {
         introduceImg[0].style.left = idx * -100 + '%';
         introduceImg[0].classList.add('animated');
         currentIndex = idx;
-
-        updatebutton();
-    }
-
-    //버튼 기능 업데이트 함수
-
-    function updatebutton(){
-        // 처음일 때 
-        if(currentIndex == 0 ){
-            leftbutton.classList.add('disabled');
-        } else{
-            leftbutton.classList.remove('disabled');
-        }
-        // 마지막일 때 
-        if(currentIndex == slideCount-1 ){
-            rightbutton.classList.add('disabled');
-        } else{
-            rightbutton.classList.remove('disabled');
-        }
     }
 
 
@@ -44,13 +25,21 @@ window.onload = function() {
 
     leftbutton[0].addEventListener('click', function(e){
         e.preventDefault();
-        goToSlide(currentIndex - 1);
+        // 처음일 때 
+        if(currentIndex != 0 ){
+            goToSlide(currentIndex - 1)
+        }
     });
 
     rightbutton[0].addEventListener('click', function(e){
         e.preventDefault();
-        goToSlide(currentIndex + 1);
+        // 마지막일 때 
+        if(currentIndex != slideCount-1 ){
+            goToSlide(currentIndex + 1);
+        }
     });
+
+    
 
     //첫 번째 슬라이드 먼저 보이도록 하기 
     goToSlide(0);
